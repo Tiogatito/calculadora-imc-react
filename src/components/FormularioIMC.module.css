@@ -1,0 +1,26 @@
+.card { border: 1px solid var(--borda); border-radius: 20px; background: var(--superficie); padding: 28px; }
+.heading { display: flex; gap: 14px; align-items: center; margin-bottom: 28px; }
+.numero { align-self: flex-start; display: grid; place-items: center; width: 38px; height: 38px; flex-shrink: 0; border-radius: 10px; color: var(--azul-escuro); background: #eef3ff; font-size: 12px; font-weight: 750; }
+.heading h2 { font-size: 20px; letter-spacing: -.5px; }
+.heading p { margin-top: 6px; color: var(--secundario); font-size: 13px; line-height: 1.5; }
+.campo { margin-bottom: 24px; }
+.campo label { display: flex; justify-content: space-between; gap: 8px; font-size: 14px; font-weight: 650; margin-bottom: 10px; }
+.campo label span { font-weight: 400; font-size: 12px; color: var(--secundario); }
+.inputWrap { position: relative; }
+.inputWrap input { width: 100%; min-height: 58px; border: 1px solid #96a4b7; border-radius: 10px; padding: 16px 54px 16px 16px; color: var(--texto); background: #fff; font-size: 20px; }
+.inputWrap input::placeholder { color: #63748a; font-size: 17px; }
+.inputWrap input[aria-invalid='true'] { border-color: var(--erro); }
+.inputWrap > span { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); color: var(--secundario); font-size: 13px; pointer-events: none; }
+.ajuda { font-size: 11px; color: var(--secundario); margin-top: 8px; line-height: 1.5; }
+.erro { font-size: 12px; line-height: 1.6; color: var(--erro); margin-top: 8px; }
+.acoes { display: flex; gap: 10px; }
+.acoes button { min-height: 52px; border-radius: 10px; font-size: 14px; font-weight: 650; padding: 14px; }
+.calcular { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex: 1; border: 1px solid var(--azul); color: #fff; background: var(--azul); }
+.calcular:hover { background: var(--azul-escuro); }
+.calcular:active { background: #133882; }
+.calcular span { font-size: 20px; }
+.limpar { background: #fff; color: var(--secundario); border: 1px solid #96a4b7; }
+.limpar:hover { background: #f1f4f8; }
+.limpar:active { background: #e5eaf1; }
+.privacidade { text-align: center; font-size: 11px; line-height: 1.6; margin-top: 20px; color: var(--secundario); }
+@media (max-width: 700px) { .card { padding: 24px; } }

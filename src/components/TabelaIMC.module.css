@@ -1,0 +1,22 @@
+.card { border: 1px solid var(--borda); border-radius: 20px; background: var(--superficie); overflow: hidden; }
+.heading { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 28px 18px; }
+.heading h2 { font-size: 17px; letter-spacing: -.3px; }
+.heading > span { font-size: 9px; letter-spacing: 1px; color: var(--secundario); font-weight: 700; }
+.card table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.card thead { color: var(--secundario); font-size: 10px; text-transform: uppercase; letter-spacing: .6px; }
+.card th, .card td { padding: 14px 28px; text-align: left; line-height: 1.6; }
+.card thead th { font-weight: 650; padding-top: 0; padding-bottom: 12px; width: 50%; }
+.card tbody th, .card tbody td { font-size: 12px; border-top: 1px solid #e7ebf0; }
+.card tbody th { font-weight: 550; }
+.card td { color: var(--secundario); }
+.card th + th, .card td + th { padding-left: 8px; }
+.selecionada { background: var(--verde-claro); }
+.selecionada td, .selecionada th { color: var(--verde); }
+.selecionada td { box-shadow: inset 3px 0 var(--verde); }
+.selo { display: block; font-size: 10px; font-weight: 750; margin-top: 3px; }
+.fonte { border-top: 1px solid #e7ebf0; padding: 16px 28px; font-size: 10px; line-height: 1.8; color: var(--secundario); }
+@media (max-width: 700px) {
+  .heading { padding: 22px 24px 18px; flex-wrap: wrap; }
+  .card th, .card td { padding-inline: 24px; }
+  .fonte { padding-inline: 24px; }
+}

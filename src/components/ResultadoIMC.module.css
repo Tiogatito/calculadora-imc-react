@@ -1,0 +1,10 @@
+.card { padding: 28px; border-radius: 20px; background: var(--texto); color: #fff; min-height: 242px; }
+.eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1.7px; color: #c5d6ec; }
+.valor { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px; margin-top: 14px; }
+.valor strong { font-size: clamp(32px, 4vw, 52px); line-height: 1.2; letter-spacing: -1px; overflow-wrap: anywhere; max-width: 100%; }
+.valor span { font-size: 14px; color: #c5d6ec; }
+.espera { font-size: 40px; font-weight: 400; color: #b6c9e1; margin-top: 12px; line-height: 1.2; }
+.classificacao { font-size: 19px; font-weight: 650; margin-top: 10px; }
+.detalhe { color: #c5d6ec; font-size: 13px; line-height: 1.65; margin-top: 10px; overflow-wrap: anywhere; max-width: 360px; }
+.nota { font-size: 11px; margin-top: 14px; color: #c5d6ec; line-height: 1.6; }
+@media (max-width: 700px) { .card { padding: 24px; min-height: 228px; } }
